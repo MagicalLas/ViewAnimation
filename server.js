@@ -1,22 +1,19 @@
 const Koa = require('koa');
+const Router = require('koa-router');
+
 const app = new Koa();
+const router = new Router();
 
-
-app.use(async (ctx, next) => {
-  await next();
-  console.log('one');
+router.get('/', (ctx, next) => {
+    ctx.body = '홈';
 });
 
-// logger
-
-app.use(async (ctx, next) => {
-  await next();
-  console.log(`two`);
+router.get('/about', (ctx, next) => {
+  ctx.body = '소개';
 });
 
-// response
 
-app.use(async ctx => {
-  ctx.body = 'Hello World';
-});
+app.use(router.routes());
+app.use(router.allowedMethods());
+
 app.listen(3000);
