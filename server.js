@@ -8,11 +8,6 @@ router.get('/', (ctx, next) => {
     ctx.body = '홈';
 });
 
-router.get('/about', (ctx, next) => {
-  ctx.body = '소개';
-});
-
-
 app.use(router.routes());
 app.use(router.allowedMethods());
 

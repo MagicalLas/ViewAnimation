@@ -1,4 +1,79 @@
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<div id="app">
-    {{ message }}
-</div>
+<style>
+    .FirstBoxInLeft1{
+    animation: FirstBoxInLeft_ 1s forwards;
+  width: 0px;
+  height: 2000px;
+  position: absolute;
+    left: 50%;
+    top: 0%;
+  background-color: rgb(236, 101, 101); 
+  float:none;
+}
+
+@keyframes FirstBoxInLeft_ {
+  0%    { padding-left: 100%; }
+  100%  { padding-left: 0%; }
+}
+
+.FirstBoxInRight1{
+    animation: FirstBoxInRight_ 1s forwards;
+  width: 0px;
+  height: 2000px;
+  position: absolute;
+    right: 50%;
+    top: 0%;
+  background-color: rgb(236, 101, 101); 
+  float:none;
+}
+
+@keyframes FirstBoxInRight_ {
+  0%    { padding-right: 100%; }
+  100%  { padding-right: 0%; }
+}
+.FirstBoxInLeft2{
+    animation: FirstBoxInLeft_ 1s forwards;
+    animation-delay: 0.1s;
+  width: 0px;
+  height: 2000px;
+  position: absolute;
+    left: 50%;
+    top: 0%;
+    padding-left: 100%;
+  background-color: rgb(101, 126, 236); 
+  float:none;
+}
+
+@keyframes FirstBoxInLeft2_ {
+  0%    { padding-left: 100%; }
+  100%  { padding-left: 0%; }
+}
+
+.FirstBoxInRight2{
+    animation: FirstBoxInRight_ 1s forwards;
+    animation-delay: 0.1s;
+  width: 0px;
+  height: 2000px;
+  position: absolute;
+    right: 50%;
+    top: 0%;
+    padding-right: 100%;
+  background-color: rgb(101, 126, 236); 
+  float:none;
+}
+
+@keyframes FirstBoxInRight2_ {
+  0%    { padding-right: 100%; }
+  100%  { padding-right: 0%; }
+}
+</style>
+<html>
+    <div class="FirstBoxInLeft2">
+    </div>
+    <div class="FirstBoxInRight2">
+    </div>
+    <div class="FirstBoxInLeft1">
+    </div>
+    <div class="FirstBoxInRight1">
+    </div>
+    
+</html>
