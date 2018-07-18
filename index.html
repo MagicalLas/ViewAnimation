@@ -1,8 +1,14 @@
 <style>
-    .FirstBoxInLeft1{
+    img {
+    max-width: 100%;
+    max-height: 100%; 
+    vertical-align:top;
+}
+
+.FirstBoxInLeft1{
     animation: FirstBoxInLeft_ 1s forwards;
   width: 0px;
-  height: 2000px;
+  height: 100%;
   position: absolute;
     left: 50%;
     top: 0%;
@@ -11,14 +17,14 @@
 }
 
 @keyframes FirstBoxInLeft_ {
-  0%    { padding-left: 100%; }
+  0%    { padding-left: 50%; }
   100%  { padding-left: 0%; }
 }
 
 .FirstBoxInRight1{
     animation: FirstBoxInRight_ 1s forwards;
   width: 0px;
-  height: 2000px;
+  height: 100%;
   position: absolute;
     right: 50%;
     top: 0%;
@@ -27,46 +33,52 @@
 }
 
 @keyframes FirstBoxInRight_ {
-  0%    { padding-right: 100%; }
+  0%    { padding-right: 50%; }
   100%  { padding-right: 0%; }
 }
 .FirstBoxInLeft2{
-    animation: FirstBoxInLeft_ 1s forwards;
+    animation: FirstBoxInLeft2_ 1s forwards;
     animation-delay: 0.1s;
   width: 0px;
-  height: 2000px;
+  height: 100%;
   position: absolute;
     left: 50%;
     top: 0%;
     padding-left: 100%;
-  background-color: rgb(101, 126, 236); 
+  background-color: rgb(252,240,228); 
   float:none;
 }
 
 @keyframes FirstBoxInLeft2_ {
-  0%    { padding-left: 100%; }
+  0%    { padding-left: 50%; }
   100%  { padding-left: 0%; }
 }
 
 .FirstBoxInRight2{
-    animation: FirstBoxInRight_ 1s forwards;
+    animation: FirstBoxInRight2_ 1s forwards;
     animation-delay: 0.1s;
   width: 0px;
-  height: 2000px;
+  height: 100%;
   position: absolute;
     right: 50%;
     top: 0%;
     padding-right: 100%;
-  background-color: rgb(101, 126, 236); 
+  background-color: rgb(252,240,228); 
   float:none;
 }
 
 @keyframes FirstBoxInRight2_ {
-  0%    { padding-right: 100%; }
+  0%    { padding-right: 50%; }
   100%  { padding-right: 0%; }
 }
+
+
+
+
 </style>
 <html>
+    <body style="background-image: url(BACK.png)">
+        
     <div class="FirstBoxInLeft2">
     </div>
     <div class="FirstBoxInRight2">
@@ -75,5 +87,5 @@
     </div>
     <div class="FirstBoxInRight1">
     </div>
-    
+</body>
 </html>
