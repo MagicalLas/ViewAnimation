@@ -225,7 +225,7 @@
 }
 
 .DoubleStrideCenter1{
-    animation: DoubleStrideCenter1_ 2s forwards;
+    animation: DoubleStrideCenter1_ 10s forwards;
     animation-delay: 2.2s;
     
     image-rendering: auto;
@@ -244,23 +244,117 @@
   0%    { padding-left: 0%; 
   width: 0%;
   height: auto;}   
-  37%  {  transform: translateY(-50%);
+  7.5%  {  transform: translateY(-50%);
   top: 50%;
   
   width: 10%;
   height: auto;
   }
-  50%  {  top: 80%;
+  10%  {  top: 80%;
   
     width: 10%;
   height: auto;
   }
+  20%{top: 80%;
+    width: 10%;
+  height: auto;}
   100%{top: 80%;
     width: 10%;
   height: auto;}
 }
 
+.DoubleStrideCenter2{
+    animation: DoubleStrideCenter2_ 10s forwards;
+    animation-delay: 2.2s;
+    
+    image-rendering: auto;
+  position: absolute;
+  width: 0%;
+  height: auto;
+  right: 45%;
+  transform: translateX(0%);
+  top: 50%;
+  overflow: hidden;
+  transform: translateY(-50%);
+  float:none;
+}
 
+@keyframes DoubleStrideCenter2_ {
+  0%    { padding-left: 0%; 
+  width: 0%;
+  height: auto;}   
+  7.5%  {  transform: translateY(-50%);
+  top: 50%;
+  
+  width: 10%;
+  height: auto;
+  }
+  10%  {  top: 80%;
+  
+    width: 10%;
+  height: auto;
+  }
+  20%{top: 80%;
+  
+    right: 45%;
+    width: 10%;
+  height: auto;}
+  30%{top: 80%;
+  right: 75%;
+    width: 10%;
+  height: auto;}
+  
+  100%{top: 80%;
+  right: 75%;
+    width: 10%;
+  height: auto;}
+}
+
+.DoubleStrideCenter3{
+    animation: DoubleStrideCenter3_ 10s forwards;
+    animation-delay: 2.2s;
+    
+    image-rendering: auto;
+  position: absolute;
+  width: 0%;
+  height: auto;
+  right: 45%;
+  transform: translateX(0%);
+  top: 50%;
+  overflow: hidden;
+  transform: translateY(-50%);
+  float:none;
+}
+@keyframes DoubleStrideCenter3_ {
+  0%    { padding-left: 0%; 
+  width: 0%;
+  height: auto;}   
+  7.5%  {  transform: translateY(-50%);
+  top: 50%;
+  
+  width: 10%;
+  height: auto;
+  }
+  10%  {  top: 80%;
+  
+    width: 10%;
+  height: auto;
+  }
+  20%{top: 80%;
+  
+    right: 45%;
+    width: 10%;
+  height: auto;}
+  30%{top: 80%;
+  right: 15%;
+    width: 10%;
+  height: auto;}
+  
+  100%{top: 80%;
+  right: 15%;
+    width: 10%;
+  height: auto;}
+}
 </style>
 
 <html>
@@ -272,6 +366,10 @@
         <div class="DoubleStrideRight1">
     </div>
     <img src="Image/icon.png" class="DoubleStrideCenter1"/>
+
+    <img src="Image/icon.png" class="DoubleStrideCenter2"/>
+
+    <img src="Image/icon.png" class="DoubleStrideCenter3"/>
 
     <div class="Stride1">
         </div>
