@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Las-Wonho/ViewAnimation/issues"
   },
-  "homepage": "https://github.com/Las-Wonho/ViewAnimation#readme"
+  "homepage": "https://github.com/Las-Wonho/ViewAnimation#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
 }
