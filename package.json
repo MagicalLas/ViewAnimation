@@ -1,0 +1,23 @@
+{
+  "name": "laserver",
+  "version": "1.0.0",
+  "description": "Wonho's Nodejs Project for Login API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Las-Wonho/ViewAnimation.git"
+  },
+  "keywords": [
+    "nodejs",
+    "mysql"
+  ],
+  "author": "Las-Wonho (Wonho Ha)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Las-Wonho/ViewAnimation/issues"
+  },
+  "homepage": "https://github.com/Las-Wonho/ViewAnimation#readme"
+}
